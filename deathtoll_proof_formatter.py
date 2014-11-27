@@ -13,7 +13,7 @@ PAGE_FORMAT_CLOSE = '}{\\rtlch\\fcs1 \\af0\\afs24 \\ltrch\\fcs0 \\f39\\fs24\\hig
                     '\\loch\\f39  }{\\rtlch\\fcs1 \\af0\\afs24 \\ltrch\\fcs0 \\f39\\fs24\\cf6\\insrsid8093251\\charrsid92860 \\hich' \
                     '\\af39\\dbch\\af31505\\loch\\f39 ======================================\\line }{\\rtlch\\fcs1 \\af0\\afs24' \
                     '\\ltrch\\fcs0 \\f39\\fs24\\lang2057\\langfe1041\\langnp2057\\insrsid8093251\\charrsid10886310\\par}'
-PANEL_FORMAT_OPEN = '\\par{\\rtlch\\fcs1 \\af0\\afs24 \\ltrch\\fcs0 \\f39\\fs24\\highlight4\\insrsid8093251\\charrsid16219165 \\hich\\af39' \
+PANEL_FORMAT_OPEN = '{\\rtlch\\fcs1 \\af0\\afs24 \\ltrch\\fcs0 \\f39\\fs24\\highlight4\\insrsid8093251\\charrsid16219165 \\hich\\af39' \
                     '\\dbch\\af31505\\loch\\f39 Panel '
 PANEL_FORMAT_CLOSE = ':}'
 PANEL_DELIMITER = '----'
@@ -42,10 +42,10 @@ def replace_panel_annotations(text):
 
 
 if __name__ == "__main__":
-    in_path = opendocx(sys.argv[1])
-    #in_path = "C:\\Users\\steven\\Desktop\\Deathtoll\\diamond_cut_diamond\\19\\Dcd19_trans.docx"
-    rtf_out_file = open(sys.argv[2], 'w')
-    #rtf_out_file = open('rtf_out.rtf', 'w')
+    #in_path = opendocx(sys.argv[1])
+    in_path = "C:\\Users\\steven\\Desktop\\Deathtoll\\diamond_cut_diamond\\19\\Dcd19_trans.docx"
+    #rtf_out_file = open(sys.argv[2], 'w')
+    rtf_out_file = open('rtf_out.rtf', 'w')
 
     rtf_header_file = open('rtf_header.txt', 'r')
     out_rtf = rtf_header_file.read()
