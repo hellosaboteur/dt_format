@@ -42,10 +42,10 @@ def replace_panel_annotations(text):
 
 
 if __name__ == "__main__":
-    #in_path = opendocx(sys.argv[1])
-    in_path = "C:\\Users\\steven\\Desktop\\Deathtoll\\diamond_cut_diamond\\19\\Dcd19_trans.docx"
-    #rtf_out_file = open(sys.argv[2], 'w')
-    rtf_out_file = open('rtf_out.rtf', 'w')
+    in_path = opendocx(sys.argv[1])
+    #in_path = "C:\\Users\\steven\\Desktop\\Deathtoll\\diamond_cut_diamond\\19\\Dcd19_trans.docx"
+    rtf_out_file = open(sys.argv[2], 'w')
+    #rtf_out_file = open('rtf_out.rtf', 'w')
 
     rtf_header_file = open('rtf_header.txt', 'r')
     out_rtf = rtf_header_file.read()
